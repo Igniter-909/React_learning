@@ -1,21 +1,22 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import Pokedex from './components/Pokedex/Pokedex'
+import CustomRoutes from './CustomRoutes/CustomRoutes'
 import Search from './components/search/search'
-import PokemonList from './components/PokemonList/PokemonList'
+import './App.css'
+import { Link } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='pokemon-wrapper'>
-      <h1 className="pokemon-heading">
-        POKEDEX
-      </h1>
-      <Search/>
-      <PokemonList/>
-    </div>
+
+      <div className="main">
+        <h1 id="pokemon-heading"><Link to='/'> Pokedex</Link></h1>
+        <Search/>
+        <CustomRoutes/>
+      </div>
   )
 }
 

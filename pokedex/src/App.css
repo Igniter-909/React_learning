@@ -1,8 +1,10 @@
-.pokemon-wrapper{
+.main{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.pokemon-heading{
+#pokemon-heading{
   margin: 0 auto;
   letter-spacing: 5px;
+
 }
