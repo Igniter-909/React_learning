@@ -14,7 +14,6 @@ function App() {
 
       <div className="main">
         <h1 id="pokemon-heading"><Link to='/'> Pokedex</Link></h1>
-        <Search/>
         <CustomRoutes/>
       </div>
   )
